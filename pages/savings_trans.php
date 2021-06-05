@@ -192,13 +192,13 @@ if (isset($_GET['submit']))
 			<input type="hidden" name="password" value='<?php echo($password); ?>'>
     		<input type="hidden" name="userid" value='<?php echo($userid); ?>'>
     		<input type="hidden" name="s_account_number" value='<?php echo($account); ?>'>
-		<label style="color:grey;font-size: 18px;">
+		<!-- <label style="color:grey;font-size: 18px;">
 			<input type="radio" name="type" value=" bank transfer to ">
 			<span>Transfer to other account(For Reference Only)</span>
-		</label>
+		</label> -->
 		</p>
 		<label style="color:grey;font-size: 18px;">
-			<input type="radio" name="type" value=" money transfer to ">
+			<input type="radio" name="type" checked value=" money transfer to ">
 			<span>Transfer to account in this bank</span>
 		</label>
 		<!-- <p>

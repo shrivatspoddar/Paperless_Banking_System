@@ -44,7 +44,7 @@ if(isset($_GET['submit']))
   }
   else 
   {
-    echo ("error").mysqli_error($conn);
+    echo ("Error");
   }
 
   $sql1="SELECT c_account_number FROM `current_account` ORDER BY created_on DESC LIMIT 1";

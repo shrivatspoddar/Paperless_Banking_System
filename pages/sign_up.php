@@ -34,10 +34,9 @@ else{
   $password=mysqli_real_escape_string($conn,$_GET['password']);
   $phone=mysqli_real_escape_string($conn,$_GET['phone']);
   
-  $sql="INSERT INTO customers(password, customer_name, email, phone, address, date_of_birth,branch_id) VALUES ('$password','$name','$email','$phone','$address','$DOB','$branch');";
-
+  $sql="INSERT INTO `customers`(`password`, `customer_name`, `email`, `phone`, `address`, `date_of_birth`, `branch_id`) VALUES ('$password','$name','$email','$phone','$address','$DOB','$branch');";
   if(mysqli_query($conn,$sql)){
-    $sql2="select userid from customers where phone='$phone' and email='$email'";
+    $sql2="select * from customers where phone='$phone' and email='$email'";
     $result = mysqli_query($conn,$sql2);
     $row=mysqli_fetch_array($result, MYSQLI_ASSOC);
     }
@@ -82,7 +81,7 @@ else{
   <section class="container grey-text">
   	<h4 class="center">Create User</h4>
     <div class ="container">
-      <h5 class="center"><?php
+      <h5 class="center" style="text-color: red;"><?php
       if($k)
       { 
       echo "Sign Up Successful \n";
@@ -91,7 +90,7 @@ else{
       }
       else 
       {
-         echo mysqli_error($conn);
+         echo "User already exists";
       }
       ?> </h5>
     </div>

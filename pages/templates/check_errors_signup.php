@@ -3,7 +3,7 @@ include ('templates/database_conn.php');
 
 $name=$DOB=$address=$email=$password=$confirmpassword=$phone=$OTP_MAIL=$OTP_PHONE='';
 
-$errors = array('name'=>'empty','DOB'=>'','address'=>'','email'=>'','OTP_MAIL'=>'','phone'=>'','OTP_PHONE'=>'','password'=>'','confirmpassword'=>'','branch'=>'');
+$errors = array('name'=>'Required','DOB'=>'','address'=>'','email'=>'','OTP_MAIL'=>'','phone'=>'','OTP_PHONE'=>'','password'=>'','confirmpassword'=>'','branch'=>'');
 
 $date="2003-01-01";
 

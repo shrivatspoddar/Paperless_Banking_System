@@ -542,7 +542,7 @@ ALTER TABLE `current_transactions`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `userid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1000000063;
+  MODIFY `userid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1000000070;
 
 --
 -- AUTO_INCREMENT for table `fixed_deposits`
